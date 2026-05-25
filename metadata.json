@@ -1,0 +1,6 @@
+{
+  "name": "Dharohar Jewellers",
+  "description": "Premium Indian luxury jewellery e-commerce brand.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

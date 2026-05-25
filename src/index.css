@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-ivory: #fdfcf8;
+  --color-brand-beige: #f5f2ed;
+  --color-brand-gold: #c5a059;
+  --color-brand-gold-light: #d6b980;
+  --color-brand-gold-muted: #a38144;
+  --color-brand-dark: #1a1a1a;
+  
+  --font-serif: "Georgia", ui-serif, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Helvetica Neue", Arial, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-ivory text-brand-dark font-sans selection:bg-brand-gold selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium tracking-wide;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  @keyframes subtleZoom {
+    0% { transform: scale(1.05); }
+    100% { transform: scale(1.15); }
+  }
+
+  .editorial-frame {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(45deg, #e5e0d8, #f5f2ed);
+    display: flex;
+    align-items: flex-end;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  }
+
+  .frame-label {
+    background: rgba(255,255,255,0.9);
+    padding: 12px 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: 100%;
+    border-left: 3px solid var(--color-brand-gold);
+    color: var(--color-brand-dark);
+  }
+
+  .floating-detail {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-brand-ivory);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    z-index: 10;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .floating-detail span {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--color-brand-gold);
+  }
+}
+
+.gold-shimmer {
+  background: radial-gradient(circle at 70% 30%, rgba(197, 160, 89, 0.05) 0%, transparent 50%);
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, var(--color-brand-gold-light), var(--color-brand-gold), var(--color-brand-gold-muted));
+}
+
+.glass-nav {
+  @apply bg-brand-ivory/80 backdrop-blur-md border-b;
+  border-color: rgba(197, 160, 89, 0.2);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, var(--color-brand-gold), var(--color-brand-gold-muted));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
