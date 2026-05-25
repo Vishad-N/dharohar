@@ -49,8 +49,8 @@ export default function Heritage() {
               transition={{ delay: 0.2 }}
               className="text-4xl md:text-6xl font-serif text-matte-black mb-10 leading-tight"
             >
-              The Legacy Of <br />
-              <span className="italic text-gold-500">Royal Panjab</span>
+              Echoes Of An <br />
+              <span className="italic text-gold-500">Ancient Kingdom</span>
             </motion.h2>
 
             <motion.div
@@ -61,10 +61,10 @@ export default function Heritage() {
               className="space-y-6 text-matte-black/70 font-light leading-relaxed"
             >
               <p>
-                Inspired by the profound elegance of royal heritage, Dharohar brings forth a curation of timeless masterworks. Each piece is a testament to generations of artisanal mastery, born from the sacred hearths of ancient gold crafters.
+                Once upon a time in the golden heartlands, whispers of opulence traveled through the courts of an ancient kingdom. Dharohar captures these forgotten tales, forging them into heirloom pieces that carry the spirit of majestic queens and valorous kings.
               </p>
               <p>
-                Our philosophy transcends mere ornamentation. We believe in preserving the meticulous details of Indian artistry—the delicate filigree, the heavy unyielding gold, and the divine symmetry that adorned the royalty of yesteryears.
+                Beyond mere gold and gems, each creation is a vessel of history. We revive the sacred techniques of royal artisans, breathing life into the intricate filigree and bold motifs that once illuminated the grand palaces of yore.
               </p>
             </motion.div>
 
